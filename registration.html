@@ -4,137 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .divider {
-        width: 1px;
-        height: 16px;
-        background-color: #000;
-      }
-      /* розбор */
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-      .button {
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-        width: 78px;
-        height: 16px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 16px;
-        border: 0;
-      }
-      .button_2 {
-        background-color: #ffffff;
-        color: #46a358;
-        width: 78px;
-        height: 16px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 16px;
-        border: 0;
-      }
-
-      .text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-      .Username {
-        color: #a5a5a5;
-        width: 65px;
-        height: 16px;
-      }
-      .email {
-        color: #a5a5a5;
-        width: 65px;
-        height: 16px;
-      }
-      .password {
-        color: #a5a5a5;
-        width: 65px;
-        height: 16px;
-      }
-      .Confirm_password {
-        color: #a5a5a5;
-        width: 65px;
-        height: 16px;
-      }
-      .input {
-        display: inline-block;
-        margin-bottom: 20px;
-      }
-      .form_example {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-      .button_3 {
-        width: 63px;
-        height: 16px;
-      }
-      .button_3 {
-        display: block;
-        background-color: #46a358;
-        color: #ffffff;
-        width: 300px;
-        height: 45px;
-        border: 1px solid #46a358;
-        padding: 10px;
-        text-align: center;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin: 0 auto 15px;
-      }
-      .button_3:hover {
-        background: #ffffff;
-        color: #46a358;
-      }
-      .text_2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-      }
-      .text_2 {
-        color: #3d3d3d;
-        line-height: 16px;
-      }
-      .divider_2 {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        position: relative;
-      }
-      .social_login {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 300px;
-        height: 40px;
-        border: 1px solid #eaeaea;
-        text-decoration: none;
-        gap: 10px;
-        transition: 0.2s;
-        margin: 0 auto 15px;
-      }
-      .social_login:hover {
-        box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.42);
-      }
-      .icon_facebook{
-        width: 20px;
-      }
-      .icon_google{
-        width: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div class="container">
@@ -142,49 +12,52 @@
       <div class="divider"></div>
       <button class="button_2">register</button>
     </div>
-
     <p class="text">Enter your email and password to register.</p>
     <form action="/cobmit" method="get">
-    <div class="form_example">
-        <input
-          class="input"
-          type="text"
-          name="name"
-          placeholder="Username"/>
-        </div>
-    <div class="form_example">
+      <div class="form_example">
+        <input class="input" type="text" name="name" placeholder="Username" />
+      </div>
+      <div class="form_example">
         <input
           class="input"
           type="email"
           name="email"
           placeholder="Enter your email address"
         />
-    </div>
-    <div class="form_example">
+      </div>
+      <div class="form_example">
         <input
           class="input"
           type="password"
           name="password"
           placeholder="password"
         />
-    </div>
-    <div class="form_example">
+      </div>
+      <div class="form_example">
         <input
           class="input"
           type="password"
           name="password"
           placeholder="Confirm password"
         />
-    </div>
-    <button type="submit" class="button_3">register</button>
+      </div>
+      <button type="submit" class="button_3">register</button>
     </form>
     <p class="text_2">Or register with</p>
     <button type="button" class="social_login">
-      <img class="icon_google" src="/images/icon-google.png" alt="Логотип Google"/>
+      <img
+        class="icon_google"
+        src="/images/icon-google.png"
+        alt="Логотип Google"
+      />
       <span>Continue with Google</span>
     </button>
     <button type="button" class="social_login">
-      <img class="icon_facebook" src="/images/facebook_images.png" alt="Логотип Facebook"/>
+      <img
+        class="icon_facebook"
+        src="/images/facebook_images.png"
+        alt="Логотип Facebook"
+      />
       <span>Continue with Facebook</span>
     </button>
   </body>
